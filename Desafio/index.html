@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simuladores Matemáticos</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Simuladores Interactivos</h1>
+
+    <section class="contenedor">
+        <h2>Transferencia de Calor</h2>
+
+        <form>
+            <label>Temperatura inicial (T0):</label>
+            <input type="number" id="t0" value="120">
+
+            <label>Temperatura del entorno (Ts):</label>
+            <input type="number" id="ts" value="38">
+
+            <label>Constante (k):</label>
+            <input type="number" step="0.01" id="k" value="0.45">
+
+            <label>Tiempo (t):</label>
+            <input type="number" id="t" value="3">
+
+            <button type="button" onclick="calcularTemperatura()">
+                Calcular
+            </button>
+        </form>
+
+        <div class="resultado" id="resultadoTemp"></div>
+    </section>
+
+    <section class="contenedor">
+        <h2>Combinaciones Complejas</h2>
+
+        <form>
+            <label>Grupo 1 - n:</label>
+            <input type="number" id="n1" value="59">
+
+            <label>Grupo 1 - r:</label>
+            <input type="number" id="r1" value="5">
+
+            <label>Grupo 2 - n:</label>
+            <input type="number" id="n2" value="35">
+
+            <label>Grupo 2 - r:</label>
+            <input type="number" id="r2" value="1">
+
+            <button type="button" onclick="calcularCombinaciones()">
+                Calcular
+            </button>
+        </form>
+
+        <div class="resultado" id="resultadoComb"></div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
